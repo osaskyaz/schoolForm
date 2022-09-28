@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Page</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="brand">school project</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+               
+                <li class="nav-item"><a href="registration.html" class="nav-link">Registration</a></li>
+                
+                <li class="nav-item"><a href="attendance.html" class="nav-link">Attendance</a></li>
+                
+                <li class="nav-item"><a href="results.html" class="nav-link">Results</a></li>
+               
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="toggleBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <form>  
+        <div class="container1">  
+        <center>  <h1> Student Registeration Form</h1> </center>  
+        <hr> 
+      
+      <label> Firstname </label>   
+      <input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+      <div>
+      <label> Middlename: </label>   
+      <input type="text" name="middlename" placeholder="Middlename" size="15" required /> </div>  
+      <label> Lastname: </label>    
+      <input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+      <div>  
+      <label>   
+      Course :  
+      </label>   
+        
+      <select>  
+      <option value="Course">Course</option>  
+      <option value="Maths">Maths</option>  
+      <option value="English">English</option>  
+      <option value="Science">Science</option>  
+      <option value="History">History</option>  
+      <option value="Business">Business</option>  
+      <option value="Tech">Tech</option>  
+      </select>  
+      </div>  
+      <div>  
+      <label>   
+      Gender :  
+      </label><br>  
+      <input type="radio" value="Male" name="gender" checked > Male   
+      <input type="radio" value="Female" name="gender"> Female   
+      <input type="radio" value="Other" name="gender"> Other  
+        
+      </div>  
+      <label>   
+      Phone :  
+      </label>  
+      <input type="text" name="country code" placeholder="Country Code"  value="080" size="2"/>   
+      
+        <div>Current Address :  
+      <textarea cols="80" rows="5" placeholder="Current Address" value="address" required > </div> 
+      </textarea>  
+       <label for="email"><b>Email</b></label>  
+       <input type="text" placeholder="Enter Email" name="email" required>  
+          <div>
+          <label for="psw"><b>Password</b></label>  
+          <input type="password" placeholder="Enter Password" name="psw" required></div>   
+          <button type="submit" class="registerbtn">Register</button> 
+
+        </div>   
+      </form>  
+    <script src="script.js"></script>
+</body>
+</html>

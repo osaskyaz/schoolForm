@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    overflow: hidden;
+}
+
+/* navbar starts here */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: blue;
+}
+
+.toggleBtn{
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.brand {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item{
+        margin: 2.5rem 0;
+    }
+
+    .toggleBtn {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+/* navbar ends here */
+
+
+/* Login form starts here */
+
+.container {   
+    padding: 10% 20%;
+    background-color: lightblue;  
+}   
+
+form {   
+    border: 1px solid #f1f1f1;   
+}   
+
+input[type=text], input[type=password] {   
+    width: 100%;   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: 2px solid green;   
+}  
+
+button {   
+    background-color: #4CAF50;   
+    width: 100%;  
+     color: orange;   
+     padding: 15px;   
+     margin: 10px 0px;   
+     border: none;   
+     cursor: pointer;   
+      }   
+
+button:hover {   
+     opacity: 0.7;   
+ }   
+.cancelbtn {   
+     width: auto;   
+     padding: 10px 18px;  
+     margin: 10px 5px;  
+ }   
+/* Login form ends here */
+
+/* Registration form begins */
+
+.container1 {  
+    padding: 50px;
+    background-color: wheat; 
+    
+  }  
+    
+  input[type=text], input[type=password], textarea {  
+    width: 100%;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+    border: none;  
+    background: #f1f1f1;  
+  }  
+  input[type=text]:focus, input[type=password]:focus {  
+    background-color: orange;  
+    outline: none;  
+  }  
+   div {  
+              padding: 10px 0;  
+           }  
+  hr {  
+    border: 1px solid #f1f1f1;  
+    margin-bottom: 25px;  
+  }  
+  .registerbtn {  
+    background-color: #4CAF50;  
+    color: white;  
+    padding: 16px 20px;  
+    margin: 8px 0;  
+    border: none;  
+    cursor: pointer;  
+    width: 100%;  
+    opacity: 0.9;  
+  }  
+  .registerbtn:hover {  
+    opacity: 1;  
+  }  
+
+  /* end registration */
+
+  /* start attendance */
+
+  .container2{
+    background-color: greenyellow;
+  }
+
+  th {
+    background-color: #001f3f;
+    color: #fff;
+    padding: 0.5em 1em;
+}
+
+td {
+    border-top: 1px solid #eee;
+    padding: 0.5em 1em;
+}
+
+input {
+    cursor: pointer;
+}
+
+/* Column types */
+th.missed-col {
+    background-color: #f00;
+}
+
+td.missed-col {
+    background-color: #ffecec;
+    color: #f00;
+    text-align: center;
+}
+
+.name-col {
+    text-align: left;
+}
